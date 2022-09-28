@@ -1,0 +1,73 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.home-headerLeft{
+    display: flex;
+    align-items: center;
+}
+.home-headerLeft p{
+    margin-right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.home-headerRight{
+    display: flex;
+    align-items: center;
+}
+.home-headerRight p{
+    margin-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.home-headerRight .app-icon{
+    margin-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.home-headerRight .account-icon{
+    margin-left: 20px;
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.home-body{
+    flex: 1;
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+}
+
+.home-body img{
+    object-fit: contain;
+    height: 100px;
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .home-headerRight p{
+        display: none;
+    }
+    .home-body img{
+        width: 220px;
+    }
+    .home-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    
+}

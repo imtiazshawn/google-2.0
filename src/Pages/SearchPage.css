@@ -1,0 +1,122 @@
+.searchPage-header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    align-items: flex-start;
+    padding: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.searchPage-header img{
+    height: 50px;
+    margin-right: 50px;
+    align-items: flex-start;
+}
+
+.searchPage-options{
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin-top: 30px;
+}
+
+.searchPage-option{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.searchPage-optionsLeft p{
+    margin-left: 5px;
+}
+.searchPage-option{
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.searchPage-optionsLeft, .searchPage-optionRight{
+    display: flex;
+    align-items: center;
+}
+
+.searchPage-optionRight{
+    margin-left: 40px;
+}
+
+.SearchPage .search-input{
+    margin-top: 0;
+    margin: 0px 0px;
+}
+
+.searchPage-resultsCount{
+    color: #70757a;
+    font-size: 14px;
+}
+
+.searchPage-results{
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+.searchPage-result{
+    margin: 40px 0;
+}
+.searchPage-resultLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 3px;
+}
+.searchPage-resultTitle{
+    text-decoration: none;
+}
+.searchPage-resultTitle h2{
+    font-weight: 500;
+}
+.searchPage-resultTitle:hover{
+    text-decoration: underline;
+}
+.searchPage-resultDescription{
+    margin-top: 10px;
+}
+
+.searchPage_resultImage{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .searchPage-header{
+        flex-direction: column;
+        padding: 12px;
+    }
+    .searchPage-header img{
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 110px;
+    }
+    .searchPage-optionRight{
+        display: none;
+    }
+    .SearchPage .search-input{
+        width: 330px;
+        margin-top: 15px;
+    }
+    .searchPage-results{
+        margin-left: 25px;
+    }
+    .searchPage-option p{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .searchPage-option{
+        margin-right: 10px;
+    }
+}
